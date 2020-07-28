@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="Icons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="Icons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="Icons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="Icons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="Icons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="Icons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="Icons/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="Icons/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="Icons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="Icons/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="Icons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="Icons/favicon-128.png" sizes="128x128" />
+		<meta name="PARADOX 0312" content="&nbsp;"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="Iconsmstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="Icons/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="Icons/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="Icons/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="Icons/mstile-310x310.png" />
+			
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {box-sizing: border-box}
+
+		<!-- set hight of tab to 100% -->
+		body, html {
+		height: 100%;
+		margin: 0;
+		font-family: Arial;
+		}
+
+		<!-- Style tab link -->
+		
+		.tablink {
+		background-color: black;
+		color: green;
+		float: center;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: 25%;
+		}
+
+		.tablink:hover {
+		background-color: green;
+		}
+
+		<!-- Style the tab content (and add height:100% for full page content) --->
+		
+		.tabcontent {
+		  color: green;
+		  display: none;
+		  padding: 100px 20px;
+		  height: 100%;
+		}
+
+		#Home {background-color: black;}
+		#Cipher Alphabet First Letter {background-color: black;}
+		#Cipher Alphabet Second Letter {background-color: black;}
+		#Augustus Code {background-color: black;}
+		#Enigma Machine {background-color: black;}
+	</style>
+</head>
+<body style="background-color:black;">
+		<button	class="tablink" onclick="openPage('Home', this, 'green')"id="defaultOpen">Home</button>
+		<button class="tablink" onclick="openPage('Cipher Alphabet First Letter', this, 'green')">Cipher Alphabet First Letter</button>
+		<button class="tablink" onclick="openPage('Cipher Alphabet Second Letter', this, 'green')">Cipher Alphabet Second Letter</button>
+		<button class="tablink" onclick="openPage('Augustus Code', this, 'green')">Augustus Code</button>
+		<button class="tablink" onclick="openPage('Enigma Machine', this, 'green')">Enigma Machine</button>
+	<div id="Home" class="tabcontent">
+	  <h3 style="color: green; text-align: center"> PARADOX 0312 </h3>
+	  <p style="color: green;  text-align: center">
+		xin chào.<br>
+			<br>
+			Đây là điểm khởi đầu của quá trình tìm kiếm người <br>
+			có trí thông minh cao. Và để làm được điều đó tôi <br>
+			đã tạo ra bài kiểm tra này. <br>
+			<br>
+			Đây là câu khởi đầu nên tôi sẽ làm nó thật dễ và <br>
+			trợ giúp các bạn tiến vào con đường để lấy được <br>
+			phần thưởng cuối cùng. <br>
+			<br>
+			Đây là đoạn mã:<br>
+			<br>
+			NOHOHAKAOSKYBNKBEQGWDGCHAKYDGHTJK<br>
+			<br>
+			Good Luck<br>
+			<br>
+			0312<br>
+			<br>
+			P/s: “Lines are very difficult to learn.” ― Benedict Cumberbatch <br>
+			<a href="https://crazyduy.github.io/Paradox1/"><img src="Picture/sign.jpg"></a>
+	  </p>
+	</div>
+
+	<div id="Cipher Alphabet First Letter" class="tabcontent">
+	  <h3 style="color: green;">Cipher Alphabet First Letter</h3>
+	  <p> <img src="Picture/CAFL.jpg"></p> 
+	</div>
+
+	<div id="Cipher Alphabet Second Letter" class="tabcontent">
+	  <h3 style="color: green;">Cipher Alphabet Second Letter</h3>
+	  <p><img src="Picture/CASL.jpg"></p>
+	</div>
+	
+	<div id="Augustus Code" class="tabcontent">
+	  <h3 style="color: green;">Augustus Code</h3>
+	  <p><img src="Picture/augustus.jpg"></p>
+	</div>
+	
+	<div id="Enigma Machine" class="tabcontent">
+	  <h3 style="color: green;">Enigma Machine</h3>
+	  <p><img src="Picture/enigma.jpg"></p>
+	</div>
+	
+	<script>
+	function openPage(pageName,elmnt,color) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].style.backgroundColor = "";
+	  }
+	  document.getElementById(pageName).style.display = "block";
+	  elmnt.style.backgroundColor = color;
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>   
+</body>
+</html>
